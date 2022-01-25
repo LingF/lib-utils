@@ -1,0 +1,45 @@
+{
+  "name": "lib-utils",
+  "version": "1.0.0",
+  "description": "utils",
+  "main": "dist/lib-utils.umd.js",
+  "module": "dist/lib-utils.esm.js",
+  "scripts": {
+    "dev": "rollup -w --environment NODE_ENV:development -c scripts/rollup.config.dev.js",
+    "test": "jest",
+    "test:c": "jest --coverage",
+    "lint": "eslint src",
+    "lint-fix": "npm run lint --fix",
+    "commit": "git-cz"
+  },
+  "keywords": [],
+  "author": "LingZ",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-replace": "^3.0.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.7.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "rollup-jest": "^1.1.3",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "jest": {
+    "preset": "rollup-jest"
+  }
+}
